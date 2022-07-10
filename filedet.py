@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 
 class fcollect:
@@ -7,6 +9,7 @@ class fcollect:
         self.startdir = start_dir
         self.found_files = []
 
+        print(f"Collecting files from {self.startdir }")
         for dirname, dirnames, filenames in os.walk(self.startdir):
             # print path to all subdirectories first.
             for subdirname in dirnames:
